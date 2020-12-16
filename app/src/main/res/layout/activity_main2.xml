@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="411dp"
+        android:layout_height="223dp"
+        android:background="#9E9E9E"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Silver Yoga"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/partitionLayout"
+        android:layout_width="205dp"
+        android:layout_height="190dp"
+        android:background="#2196F3"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/yogaClsImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/yogaclass"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/yogaClsTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="요가수업"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rankingLayout"
+        android:layout_width="205dp"
+        android:layout_height="190dp"
+        android:background="#AA0C0C"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/rankClsImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/yogarank"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/rankClsTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="추천요가"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/favoriteLayout"
+        android:layout_width="205dp"
+        android:layout_height="190dp"
+        android:layout_marginEnd="1dp"
+        android:background="#8BC34A"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/comsetLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partitionLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/favClsImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/yogafavorite"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/favClsTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="찜한수업"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comsetLayout"
+        android:layout_width="205dp"
+        android:layout_height="190dp"
+        android:background="#F6BE15"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rankingLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/moreShowImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/yogamore"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/moreShowTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="더 보 기"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

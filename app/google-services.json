@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "332348830900",
+    "firebase_url": "https://growinyoga-4f680.firebaseio.com",
+    "project_id": "growinyoga-4f680",
+    "storage_bucket": "growinyoga-4f680.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332348830900:android:ed9c39a11de7df391fd3e1",
+        "android_client_info": {
+          "package_name": "com.growin.silveryogaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332348830900-il95vdulmv3r611piraiuokt7papdhgt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuFk9rfKcV2ZigrNbW1MbedTXHQoaHP2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332348830900-il95vdulmv3r611piraiuokt7papdhgt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
