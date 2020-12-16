@@ -42,7 +42,7 @@ public class FavoriteYoga extends BaseActivity {
     private RecyclerView.LayoutManager layoutManager;
 
     private String userEmail;
-//
+////
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -108,7 +108,7 @@ public class FavoriteYoga extends BaseActivity {
                         public void onSuccess(Uri uri) {
                             Log.d("이미지 다운로드 : ", "성공!!!!!!");
 
-                            GetCount(strVideo, new IFavoritYoga() {
+                            GetCount(strVideo, new IFavoriteYoga() {
                                 @Override
                                 public void onCallBackIdxCnt(int Idx, int Cnt) {
                                     Content content = new Content();
@@ -148,7 +148,7 @@ public class FavoriteYoga extends BaseActivity {
 
     }
 
-    public void GetCount(String strVideo, IFavoritYoga iFavoritYoga){
+    public void GetCount(String strVideo, IFavoriteYoga iFavoriteYoga){
 
         Query query = pDatabaseRef.child("Contents").orderByChild("video").equalTo(strVideo);
 
@@ -162,7 +162,7 @@ public class FavoriteYoga extends BaseActivity {
                     nIndex = Integer.parseInt(ss.getKey());
                     Log.d("Content에사 가져온 Index값 : ", ss.getKey());
                 }
-                iFavoritYoga.onCallBackIdxCnt(nIndex, nCnt);
+                iFavoriteYoga.onCallBackIdxCnt(nIndex, nCnt);
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {

@@ -1,7 +1,7 @@
 package com.growin.silveryogaapp.data;
 
 public class Favorit {
-
+//
     private String idx;
     private String img;
     private String mail;
