@@ -42,7 +42,7 @@ public class FavoriteYoga extends BaseActivity {
     private RecyclerView.LayoutManager layoutManager;
 
     private String userEmail;
-
+//
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

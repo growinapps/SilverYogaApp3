@@ -8,7 +8,7 @@ public class Favorit {
     private String mail_video;
     private String name;
     private String video;
-    private int cnt;  //Content 에서 읽어온 cnt
+    private int cnt;
 
 
     public String getIdx() {
